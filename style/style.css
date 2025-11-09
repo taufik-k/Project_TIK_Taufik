@@ -448,3 +448,121 @@ footer {
     }
 
 }
+
+
+/* pusingggg pakkkk */
+
+/* ====== FIX TAMPILAN SKILL / TEKNOLOGI DIGITAL ====== */
+.container-image-skill {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.field-image-skill {
+  position: relative;
+  width: 200px; /* Lebih konsisten di semua device */
+  height: 200px;
+  background: rgb(16, 65, 62);
+  border: 2px solid rgb(94, 234, 212);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Biar teks muncul di tengah & responsif */
+.field-image-skill span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgb(94, 234, 212);
+  color: rgb(16, 65, 62);
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: translateY(100%);
+  transition: .4s ease-in-out;
+}
+
+/* Animasi hover muncul halus dari bawah */
+.field-image-skill:hover span {
+  transform: translateY(0);
+}
+
+/* Gambar biar rapi tengah */
+.image-skill {
+  width: 100px;
+  height: auto;
+  z-index: 1;
+  transition: .3s;
+}
+
+.field-image-skill:hover .image-skill {
+  transform: scale(1.1);
+}
+
+/* ====== FIX TEKS ABOUT BERANTAKAN ====== */
+.about {
+  padding: 120px 0;
+}
+
+.container-about {
+  width: 85%;
+  margin: auto;
+  background: rgb(16, 65, 62);
+  border: 2px solid rgb(94, 234, 212);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  line-height: 1.7;
+  text-align: justify;
+  word-break: break-word;
+}
+
+/* Hapus tag <br> yang tidak perlu, diganti dengan margin otomatis */
+.container-about p {
+  margin-bottom: 16px;
+}
+
+/* Heading "About" lebih rapi di tengah */
+.container-about h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: rgb(94, 234, 212);
+  letter-spacing: 1px;
+}
+
+/* Responsive fix untuk tampilan HP */
+@media (max-width: 768px) {
+  .field-image-skill {
+    width: 45%;
+    height: 160px;
+  }
+
+  .field-image-skill span {
+    font-size: 18px;
+    padding: 6px 0;
+  }
+
+  .container-about {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .container-about h1 {
+    font-size: 32px;
+  }
+
+  .container-about p {
+    font-size: 16px;
+  }
+}
