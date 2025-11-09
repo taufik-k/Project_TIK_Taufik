@@ -639,3 +639,70 @@ p {
     font-size: 1.5em;
   }
 }
+
+
+/* ===== BAGIAN GAMBAR ===== */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px; /* tambah jarak agar tidak nabrak About */
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 800px; /* biar gak terlalu besar */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ===== BAGIAN ABOUT ===== */
+.about-section {
+  margin-top: 40px; /* jarak tambahan dari gambar di atas */
+}
+
+.about-box {
+  padding: 25px;
+  border: 2px solid #00ffee;
+  border-radius: 12px;
+  background-color: rgba(0, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  line-height: 1.4; /* biar gak terlalu renggang */
+}
+
+/* Heading About */
+.about-section h1 {
+  text-align: center;
+  color: #00ffee;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.about-section h1 span {
+  border-bottom: 2px solid #00ffee;
+  padding-bottom: 5px;
+}
+
+/* Paragraf rata kanan kiri */
+.about-section p {
+  text-align: justify;
+  margin-bottom: 12px; /* jarak antar paragraf */
+}
+
+/* ===== PERKENALAN (kalau di section lain) ===== */
+.intro-section p {
+  text-align: justify;
+  line-height: 1.4; /* kurangi spasi antar baris */
+  margin-bottom: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 1.5em;
+  }
+
+  .about-box {
+    padding: 15px;
+  }
+}
