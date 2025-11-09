@@ -403,6 +403,46 @@ footer {
 
     /* Footer agar lebih rapi di HP */
     footer {
+
+
+        /* pusingg gara gara gak responsiff pakkk hehehe */
+
+        /* ==== PATCH FIX V2 (Center Titles & Footer Color Fix) ==== */
+
+/* Center full title SKILL */
+.skill h1 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Center title in mobile for all main headers */
+@media(max-width: 768px){
+    .section-home h1,
+    .about h1,
+    .skill h1,
+    .project h1 {
+        text-align: center !important;
+        width: 100%;
+    }
+}
+
+/* ✅ Footer Title Color Fix Force */
+.footer-logo h1, 
+.footer-logo h1 * {
+    font-weight: bold;
+}
+
+.footer-logo h1 span:nth-child(1) {
+    color: #ff3434 !important; /* Merah terang */
+}
+
+.footer-logo h1 span:nth-child(2) {
+    color: #ffffff !important; /* Putih */
+}
+
         padding-top: 60px;
         padding-bottom: 90px;
     }
