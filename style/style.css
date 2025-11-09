@@ -346,3 +346,65 @@ footer {
         height: 150px;
     }
 }
+
+
+/* ==== PATCH FIX 11-09-2025 ==== */
+
+/* Fix Jarak Judul Skill & About */
+.skill h1,
+.container-about h1 {
+    margin-top: 40px;
+}
+
+/* Perbaiki judul "Jenis-jenis Teknologi Digital" */
+.skill h1 {
+    margin-bottom: 40px;
+}
+
+/* Jarak teks gambar skill (Smartphone, Laptop, dll) */
+.field-image-skill span {
+    font-size: 22px;
+    padding: 5px;
+    line-height: normal;
+}
+
+/* Footer Title Color Fix */
+.footer-logo h1 span:first-child {
+    color: red !important;
+}
+.footer-logo h1 span:last-child {
+    color: white !important;
+}
+
+/* Jarak Footer Supaya Napas */
+footer {
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+
+@media(max-width: 768px){
+
+    /* Jarak judul skill di hp */
+    .skill h1 {
+        font-size: 36px;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    /* Jarak container skill */
+    .container-image-skill {
+        margin-top: 20px;
+    }
+
+    /* Jarak judul bagian Project */
+    .project h1 {
+        margin-top: 90px;
+    }
+
+    /* Footer agar lebih rapi di HP */
+    footer {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+}
