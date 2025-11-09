@@ -569,224 +569,70 @@ footer {
 
 /* plengennn gesss  */
 /* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+
+  
+
+
+ 
+
+
+
+
+
+/* ==== FIX TAMPILAN HOME & ABOUT (Final Clean) ==== */
+
+/* Jarak antara gambar dan about */
+.home {
+  margin-bottom: 100px; /* beri jarak cukup biar gak nabrak */
 }
 
-/* Warna dasar body */
-body {
-  background-color: rgb(12, 21, 41);
-  color: white;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* ===== RATAKAN TEKS UMUM ===== */
-p {
-  text-align: justify;
-  line-height: 1.6;
-}
-
-/* ===== CONTAINER UMUM ===== */
-.container {
-  padding: 20px;
-}
-
-/* ===== SECTION GAMBAR ===== */
-.image-section {
-  margin-bottom: 40px; /* jarak bawah agar tidak nabrak About */
-}
-
-/* ===== SECTION ABOUT ===== */
-.about-section {
-  margin-top: 60px; /* jarak dari gambar di atas */
-}
-
-.about-box {
-  padding: 20px;
-  border: 2px solid #00ffee; /* garis lembut biru kehijauan */
-  border-radius: 12px;
-  background-color: rgba(0, 255, 255, 0.05); /* efek transparan lembut */
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); /* sedikit glow */
+/* Atur jarak dalam section about */
+.about {
+  padding: 80px 0;
+  margin-top: 40px;
 }
 
 .container-about {
-  padding: 15px;
-}
-
-/* ===== HEADING ABOUT ===== */
-.about-section h1 {
-  text-align: center;
-  color: #00ffee;
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.about-section h1 span {
-  border-bottom: 2px solid #00ffee;
-  padding-bottom: 5px;
-}
-
-/* ===== AGAR RESPONSIF DI HP ===== */
-@media (max-width: 768px) {
-  .about-box {
-    padding: 15px;
-  }
-
-  .about-section h1 {
-    font-size: 1.5em;
-  }
-}
-
-
-/* ===== BAGIAN GAMBAR ===== */
-.image-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px; /* tambah jarak agar tidak nabrak About */
-}
-
-.image-section img {
-  width: 100%;
-  max-width: 800px; /* biar gak terlalu besar */
-  height: auto;
-  border-radius: 10px;
-}
-
-/* ===== BAGIAN ABOUT ===== */
-.about-section {
-  margin-top: 40px; /* jarak tambahan dari gambar di atas */
-}
-
-.about-box {
-  padding: 25px;
-  border: 2px solid #00ffee;
-  border-radius: 12px;
-  background-color: rgba(0, 255, 255, 0.05);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-  line-height: 1.4; /* biar gak terlalu renggang */
-}
-
-/* Heading About */
-.about-section h1 {
-  text-align: center;
-  color: #00ffee;
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.about-section h1 span {
-  border-bottom: 2px solid #00ffee;
-  padding-bottom: 5px;
-}
-
-/* Paragraf rata kanan kiri */
-.about-section p {
-  text-align: justify;
-  margin-bottom: 12px; /* jarak antar paragraf */
-}
-
-/* ===== PERKENALAN (kalau di section lain) ===== */
-.intro-section p {
-  text-align: justify;
-  line-height: 1.4; /* kurangi spasi antar baris */
-  margin-bottom: 10px;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  .about-section h1 {
-    font-size: 1.5em;
-  }
-
-  .about-box {
-    padding: 15px;
-  }
-}
-
-
-
-
-/* ==== FIX FINAL 2025-11-09 ==== */
-
-/* 1️⃣ Tambah jarak di bawah gambar home biar gak nabrak About */
-.field-image-home {
-  margin-bottom: 100px; /* kasih napas besar antara gambar & about */
-  display: flex;
-  justify-content: center;
-}
-
-.field-image-home img {
-  width: 70vh;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* 2️⃣ Rapikan teks perkenalan (intro) */
-.field-text-home p {
-  font-size: 18px;
-  line-height: 1.4; /* biar gak renggang */
-  padding: 15px;
-  margin-top: 15px;
-  text-align: justify;
-}
-
-/* 3️⃣ Rapikan section ABOUT */
-.about,
-.about-section {
-  margin-top: 80px; /* pastikan jarak cukup dari gambar */
-  padding-top: 60px;
-}
-
-.container-about,
-.about-box {
-  line-height: 1.4; /* kurangi spasi antar baris */
-  padding: 25px;
-  border: 2px solid rgb(94, 234, 212);
-  border-radius: 18px;
-  background-color: rgba(16, 65, 62, 0.8);
   width: 85%;
   margin: auto;
-}
-
-.container-about h1,
-.about-section h1 {
-  text-align: center;
-  color: rgb(94, 234, 212);
-  margin-bottom: 15px;
-  font-size: 42px;
-}
-
-.container-about p,
-.about-section p {
+  background: rgb(16, 65, 62);
+  border: 2px solid rgb(94, 234, 212);
+  border-radius: 20px;
+  padding: 30px 40px;
+  line-height: 1.6;
   text-align: justify;
-  margin-bottom: 12px;
-  font-size: 18px;
-  line-height: 1.5;
 }
 
-/* 4️⃣ Responsif biar tetap rapi di HP */
-@media (max-width: 768px) {
-  .field-image-home {
-    margin-bottom: 60px;
-  }
+.container-about h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 25px;
+  color: rgb(94, 234, 212);
+}
 
+.container-about p {
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+/* Fix teks perkenalan biar gak renggang */
+.field-text-home p {
+  line-height: 1.5;
+  padding: 12px 18px;
+  margin-top: 12px;
+}
+
+/* Responsif HP */
+@media (max-width: 768px) {
+  .container-about {
+    width: 90%;
+    padding: 20px;
+  }
+  .container-about h1 {
+    font-size: 30px;
+  }
   .field-text-home p {
     font-size: 16px;
     line-height: 1.4;
-  }
-
-  .container-about h1,
-  .about-section h1 {
-    font-size: 32px;
-  }
-
-  .container-about,
-  .about-box {
-    width: 90%;
-    padding: 20px;
   }
 }
