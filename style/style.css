@@ -706,3 +706,87 @@ p {
     padding: 15px;
   }
 }
+
+
+
+
+/* ==== FIX FINAL 2025-11-09 ==== */
+
+/* 1️⃣ Tambah jarak di bawah gambar home biar gak nabrak About */
+.field-image-home {
+  margin-bottom: 100px; /* kasih napas besar antara gambar & about */
+  display: flex;
+  justify-content: center;
+}
+
+.field-image-home img {
+  width: 70vh;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* 2️⃣ Rapikan teks perkenalan (intro) */
+.field-text-home p {
+  font-size: 18px;
+  line-height: 1.4; /* biar gak renggang */
+  padding: 15px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/* 3️⃣ Rapikan section ABOUT */
+.about,
+.about-section {
+  margin-top: 80px; /* pastikan jarak cukup dari gambar */
+  padding-top: 60px;
+}
+
+.container-about,
+.about-box {
+  line-height: 1.4; /* kurangi spasi antar baris */
+  padding: 25px;
+  border: 2px solid rgb(94, 234, 212);
+  border-radius: 18px;
+  background-color: rgba(16, 65, 62, 0.8);
+  width: 85%;
+  margin: auto;
+}
+
+.container-about h1,
+.about-section h1 {
+  text-align: center;
+  color: rgb(94, 234, 212);
+  margin-bottom: 15px;
+  font-size: 42px;
+}
+
+.container-about p,
+.about-section p {
+  text-align: justify;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* 4️⃣ Responsif biar tetap rapi di HP */
+@media (max-width: 768px) {
+  .field-image-home {
+    margin-bottom: 60px;
+  }
+
+  .field-text-home p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .container-about h1,
+  .about-section h1 {
+    font-size: 32px;
+  }
+
+  .container-about,
+  .about-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
