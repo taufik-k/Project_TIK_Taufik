@@ -7,6 +7,8 @@
 
 body {
     background-color: rgb(12, 21, 41);
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -14,17 +16,7 @@ a {
     color: inherit;
 }
 
-/* ===== HOME ===== */
-
-.home {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* ===== NAVBAR DESKTOP ===== */
+/* ===== NAVBAR ===== */
 header {
     display: flex;
     align-items: center;
@@ -37,7 +29,6 @@ header {
 }
 
 header h2 {
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
     color: greenyellow;
 }
@@ -53,11 +44,9 @@ header ul li {
 }
 
 header ul li a {
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
     text-decoration: underline;
     color: rgb(94, 234, 212);
-    transition: .3s;
 }
 
 header ul li a:hover {
@@ -67,37 +56,46 @@ header ul li a:hover {
 .hamburger-menu {
     display: none;
     cursor: pointer;
+    color: white;
 }
 
-/* ===== MAIN HOME ===== */
+/* ===== HOME ===== */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
 .section-home {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 100px 0;
+    padding-top: 120px;
+    width: 90%;
+    margin: auto;
 }
 
 .field-text-home h1 {
     font-size: 80px;
     color: aqua;
-    font-family: 'Lucida Sans', sans-serif;
 }
 
 .field-text-home h2 {
     font-size: 45px;
-    font-style: italic;
     color: white;
+    font-style: italic;
 }
 
 .field-text-home p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 19px;
+    font-size: 18px;
+    line-height: 24px;
     width: 90%;
-    margin-top: 20px;
-    padding: 20px;
+    padding: 18px;
+    background: transparent;
     border: 2px solid rgb(94, 234, 212);
-    border-radius: 25px;
+    border-radius: 18px;
+    margin-top: 18px;
+    color: white;
 }
 
 .field-image-home img {
@@ -105,58 +103,46 @@ header ul li a:hover {
     height: auto;
 }
 
-/* Swipe */
 .swipe-up {
-    font-family: 'Roboto';
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: rgb(16, 65, 62);
-    color: rgb(94, 234, 212);
+    background: rgb(16, 65, 62);
+    padding: 8px 20px;
     border: 1px solid rgb(94, 234, 212);
+    border-radius: 16px;
+    color: rgb(94, 234, 212);
 }
 
-
-/* ========== ABOUT ========== */
+/* ===== ABOUT ===== */
 .about {
     padding: 120px 0;
 }
 
 .container-about {
-    width: 75%;
+    width: 80%;
     margin: auto;
-    padding: 40px;
     background: rgb(16, 65, 62);
-    border-radius: 25px;
     border: 2px solid rgb(94, 234, 212);
+    border-radius: 20px;
+    padding: 30px;
 }
 
 .container-about h1 {
     text-align: center;
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 20px;
     color: rgb(94, 234, 212);
 }
 
 .container-about p {
     font-size: 18px;
-    line-height: 24px;
     text-align: justify;
 }
 
-
-/* ========== SKILLS ========== */
+/* ===== SKILL ===== */
 .skill {
     padding: 80px 0;
-}
-
-.skill h1 {
     text-align: center;
-    font-size: 55px;
-    margin-bottom: 50px;
 }
 
 .skill h1 span {
@@ -176,9 +162,9 @@ header ul li a:hover {
     position: relative;
     width: 20%;
     height: 200px;
-    border: 2px solid rgb(94, 234, 212);
-    border-radius: 15px;
     background: rgb(16, 65, 62);
+    border-radius: 12px;
+    border: 2px solid rgb(94, 234, 212);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,6 +175,7 @@ header ul li a:hover {
     inset: 0;
     background: rgb(94, 234, 212);
     color: rgb(16, 65, 62);
+    border-radius: 12px;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
@@ -205,41 +192,39 @@ header ul li a:hover {
     width: 120px;
 }
 
-
-/* ========== PROJECT ========== */
+/* ===== PROJECT ===== */
 .project {
     padding: 80px 0;
 }
 
 .project h1 {
+    font-size: 50px;
     text-align: center;
-    font-size: 55px;
-    color: rgb(94, 234, 212);
     margin-bottom: 40px;
 }
 
+.project h1 span {
+    color: rgb(94, 234, 212);
+}
+
 .container-project {
-    width: 95%;
+    width: 90%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
+    gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .field-project {
-    width: 45%;
+    width: 43%;
+    padding: 15px;
+    border-radius: 12px;
     background: rgb(16, 65, 62);
     border: 2px solid rgb(94, 234, 212);
-    border-radius: 15px;
-    padding: 15px;
     display: flex;
-    gap: 15px;
+    gap: 18px;
     transition: .3s;
-}
-
-.field-project:hover {
-    transform: translateY(-8px);
 }
 
 .field-project img {
@@ -247,40 +232,65 @@ header ul li a:hover {
     border-radius: 8px;
 }
 
-.field-text-project h3 span {
-    color: rgb(94, 234, 212);
+.field-project:hover {
+    transform: translateY(-8px);
 }
 
-
-/* ========== FOOTER ========== */
+/* ===== FOOTER ===== */
 footer {
     background: #111;
     padding: 40px;
     text-align: center;
 }
 
+.footer-logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-logo h1 span:first-child {
+    color: red;
+}
+
+.footer-logo h1 span:last-child {
+    color: white;
+}
+
 .footer-social-media a {
-    margin: 0 10px;
     font-size: 22px;
-    color: #fff;
+    margin: 10px;
+    color: white;
+    transition: .3s;
 }
 
-/* ===========================
-   RESPONSIVE 👇 MOBILE/TABLET
-=========================== */
-
-/* Tablet */
-@media(max-width: 992px){
-    .section-home{
-        padding:120px 50px 0;
-    }
+.footer-social-media a:hover {
+    color: #1e90ff;
 }
 
-/* Mobile */
-@media(max-width: 768px){
+.footer-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+}
 
+.footer-menu li a {
+    color: white;
+    transition: .3s;
+}
+
+.footer-menu li a:hover {
+    color: #1e90ff;
+}
+
+/* ==========================
+   RESPONSIVE MOBILE
+========================== */
+
+@media (max-width: 768px) {
     header {
-        padding: 0 25px;
+        padding: 0 20px;
     }
 
     header ul {
@@ -289,13 +299,11 @@ footer {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: rgba(10,44,41,0.97);
+        background: rgba(10, 44, 41, 0.97);
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 25px;
-        transition: .4s ease;
-        z-index: 99990;
+        gap: 30px;
+        transition: .4s;
     }
 
     header ul.ul-active {
@@ -305,49 +313,36 @@ footer {
     .hamburger-menu {
         display: block;
         margin-left: auto;
-        z-index: 99999;
     }
 
-    .section-home{
+    .section-home {
         flex-direction: column;
-        padding:130px 25px 0;
-        text-align:center;
-        gap:20px;
+        text-align: center;
+        padding-top: 130px;
     }
 
-    .field-text-home h1{
-        font-size:40px;
-    }
-    .field-text-home h2{
-        font-size:26px;
+    .field-text-home h1 {
+        font-size: 38px;
     }
 
-    .field-text-home p{
-        width:100%;
-        font-size:16px;
-        padding:12px;
-        text-align:center;
+    .field-text-home h2 {
+        font-size: 26px;
     }
 
-    .field-image-home img{
-        width:100%;
+    .field-text-home p {
+        width: 100%;
     }
 
-    .container-project{
-        flex-direction:column;
-        align-items:center;
-    }
-    .field-project{
-        width:90%;
+    .field-image-home img {
+        width: 100%;
     }
 
-    .field-image-skill{
-        width:42%;
-        height:150px;
+    .field-project {
+        width: 90%;
     }
-}
 
-/* Small Devices */
-@media(max-width:420px){
-   .field-text-home h1{font-size:32px;}
+    .field-image-skill {
+        width: 45%;
+        height: 150px;
+    }
 }
